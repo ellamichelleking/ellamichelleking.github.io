@@ -48,7 +48,7 @@ blockquote, q {
 
 ####
 .collapsible {
-  background-color: #eee;
+  background-color: #83bcae;
   color: #444;
   cursor: pointer;
   padding: 24px;
@@ -64,7 +64,7 @@ blockquote, q {
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
-  background-color: #f1f1f1;
+  background-color: #444;
 }
 
 .active, .collapsible:hover {
