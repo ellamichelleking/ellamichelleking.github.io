@@ -59,7 +59,7 @@ blockquote, q {
   font-size: 24px;
 }
 
-.collapsecontent {
+.content {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
