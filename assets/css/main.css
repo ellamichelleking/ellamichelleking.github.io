@@ -69,7 +69,7 @@ blockquote, q {
 }
 
 .active, .collapsible:hover {
-  background-color: #ccc;
+  background-color: #79ada1;
 }
 
 .collapsible:after {
@@ -82,6 +82,7 @@ blockquote, q {
 
 .active.collapsible:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
+  color: white;
 }
 
 
