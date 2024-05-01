@@ -46,10 +46,10 @@ blockquote, q {
 		content: none;
 	}
 
-####
+
 .collapsible {
   background-color: #83bcae;
-  color: #83bcae;
+  color: white;
   cursor: pointer;
   padding: 18px;
   width: 100%;
@@ -59,7 +59,7 @@ blockquote, q {
   font-size: 24px;
 }
 
-.content {
+.collapsecontent {
   padding: 0 18px;
   max-height: 0;
   overflow: hidden;
@@ -70,32 +70,6 @@ blockquote, q {
 
 
 
-
-
-details {
-  user-select: none;
-}
-
-details>summary span.icon {
-  width: 24px;
-  height: 24px;
-  transition: all 0.3s;
-  margin-left: auto;
-}
-
-details[open] summary span.icon {
-  transform: rotate(180deg);
-}
-
-summary {
-  display: flex;
-  cursor: pointer;
-}
-
-summary::-webkit-details-marker {
-  display: none;
-}
-###
 
 
 table {
