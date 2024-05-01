@@ -57,6 +57,7 @@ blockquote, q {
   text-align: left;
   outline: none;
   font-size: 22px;
+  font: inherit;
 }
 
 .content {
