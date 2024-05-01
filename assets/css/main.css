@@ -67,7 +67,9 @@ blockquote, q {
   background-color: #ffffff;
 }
 
-
+collapsible [open] content span.icon {
+  transform: rotate(180deg);
+}
 
 
 
