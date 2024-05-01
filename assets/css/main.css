@@ -47,7 +47,7 @@ blockquote, q {
 	}
 
 
-.collapsiblebutton {
+.collapsible {
   background-color: #83bcae;
   color: white;
   cursor: pointer;
@@ -67,11 +67,11 @@ blockquote, q {
   background-color: #ffffff;
 }
 
-.active, .collapsiblebutton:hover {
+.active, .collapsible:hover {
   background-color: #ccc;
 }
 
-.collapsiblebutton:after {
+.collapsible:after {
   content: '\02795'; /* Unicode character for "plus" sign (+) */
   font-size: 18px;
   color: white;
@@ -79,7 +79,7 @@ blockquote, q {
   margin-left: 5px;
 }
 
-.active, .collapsiblebutton:after {
+.active, .collapsible:after {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
