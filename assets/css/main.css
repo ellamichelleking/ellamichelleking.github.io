@@ -52,15 +52,15 @@ blockquote, q {
   color: white;
   cursor: pointer;
   padding: 18px;
-  width: 100%;
+  width: 80%;
   border: none;
   text-align: left;
   outline: none;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 .content {
-  padding: 0 18px;
+  padding: 1 18px;
   max-height: 0;
   overflow: hidden;
   transition: max-height 0.2s ease-out;
