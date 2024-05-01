@@ -67,8 +67,20 @@ blockquote, q {
   background-color: #ffffff;
 }
 
-collapsible [open] content span.icon {
-  transform: rotate(180deg);
+.active, .collapsible:hover {
+  background-color: #ccc;
+}
+
+.collapsible:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 18px;
+  color: white;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 
 
