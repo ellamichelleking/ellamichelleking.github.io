@@ -46,6 +46,16 @@ blockquote, q {
 		content: none;
 	}
 
+.less:after {
+	content: "\2796";
+	float: right;
+}
+
+.more:after {
+	content: "\02795";
+	float: right;
+}
+
 
 .collapsible {
   background-color: #83bcae;
