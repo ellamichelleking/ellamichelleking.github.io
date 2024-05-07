@@ -514,22 +514,30 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
 			<script>
-				var coll = document.getElementsByClassName("collapsible");
-				var i;
-
-				for (i = 0; i < coll.length; i++) {
-  					coll[i].addEventListener("click", function() {
-    						this.classList.toggle("active");
-    						var content = this.nextElementSibling;
-    						if (content.style.maxHeight){
-      						content.style.maxHeight = null;
-    						} else {
-      							content.style.maxHeight = content.scrollHeight + "px";
-    						} 
-  					});
-				}
-			</script>
-                        
+				       var coll = document.getElementsByClassName("collapsible");
+				       var content = document.querySelector(".content");
+				    
+				       for (var i = 0; i < coll.length; i++) {
+					 coll[i].addEventListener("click", function() {
+					   // Toggle the visibility of the content
+					   if (content.style.maxHeight) {
+					     content.style.maxHeight = null;
+					   } else {
+					     content.style.maxHeight = content.scrollHeight + "px";
+					   }
+				    
+					   // Toggle the visibility of the other button
+					   for (var j = 0; j < coll.length; j++) {
+					     if (coll[j] == this) {
+					       coll[j].style.display = coll[j].style.display === "none" ? "block" : "none";
+					     }
+					     if (coll[j] != this) {
+					       coll[j].style.display = coll[j].style.display === "none" ? "block" : "none";
+					     }
+					   }
+					 });
+				       }
+			</script>                        
 
 	</body>
 </html>
