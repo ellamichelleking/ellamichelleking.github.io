@@ -3,11 +3,11 @@
 # never overwritten, so edit freely. Mark co-first authors with * and
 # corresponding with the dagger character. Set editor_suggestion: true for
 # an Editor's Suggestion badge. Omit "link" if there is no online version.
-- authors: MK Gronert, B Cao, EM King, DG Grier
+- authors: "Gronert, M. K., Cao, B., King, E. M., Grier, D. G."
   title: Emergent activity powers a path to chaos for pairs of acoustically trapped spheres
   venue: arXiv preprint arXiv:2609.37946
   year: 2026
-  link: https://scholar.google.com/citations?view_op=view_citation&hl=en&user=tMOOznMAAAAJ&pagesize=100&sortby=pubdate&citation_for_view=tMOOznMAAAAJ:dhFuZR0502QC
+  link: https://arxiv.org/abs/2609.37946
 
 - authors: "King, E. M.*, Engel, M. C.*, Martin, C. S., Schoenholz, S. S., Manoharan, V. N., Brenner, M. P."
   title: Inferring interaction potentials from stochastic particle trajectories
