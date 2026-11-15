@@ -1,0 +1,194 @@
+# News & events, in any order (the site sorts by date).
+#
+#   date:  YYYY-MM or YYYY-MM-DD. Anything in the future is listed under
+#          "Upcoming" automatically, and moves down once it has passed
+#          (a month-only date moves down when that month begins).
+#   kind:  talk | press | award | news | service
+#   title: the headline, or the talk title
+#   where: venue, outlet, or a short detail (optional)
+#   url:   link (optional)
+
+- date: 2026-11
+  kind: service
+  title: AIChE Session Co-Chair for Active Synthetic and Biological Systems
+  where: Area 1J (Fluid Mechanics)
+
+- date: 2026-10
+  kind: talk
+  title: Designing dynamics in bio-inspired materials
+  where: Northwestern University Physics Colloquium (Invited Talk)
+
+- date: 2026-10
+  kind: talk
+  title: Designing dynamics in bio-inspired materials
+  where: University of Chicago AI+Science Seminar Series (Invited Talk)
+
+- date: 2026-09
+  kind: news
+  title: Joined Northwestern University as an Assistant Professor
+  where: Chemical & Biological Engineering and Materials Science & Engineering
+  url: https://kinggroup.northwestern.edu/
+
+- date: 2026-08
+  kind: talk
+  title: Proofreading with limited energy
+  where: Biological Physics & Physical Biology Seminar, Virtual (Invited Talk)
+
+- date: 2026-03
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Center for Soft and Living Matter, University of Pennsylvania (Invited Talk)
+
+- date: 2026-03
+  kind: talk
+  title: Controlling dynamic and non-equilibrium materials
+  where: Institute for Fundamental Science, University of Oregon (Invited Talk)
+
+- date: 2026-03
+  kind: talk
+  title: Kinetic Proofreading
+  where: Course in Molecular Biophysics, Calgary, Canada (Guest Lecture)
+
+- date: 2026-03
+  kind: service
+  title: "Panelist for APS DBIO: Your GPS for Navigating the Global Physics Summit"
+  where: Zoom event geared at preparing early-stage graduate students for their first APS March Meeting attendance
+
+- date: 2026-02
+  kind: service
+  title: Panelist for Simons Presents
+  where: One of three panelists presenting as a part of ‘Weaving Webs of Silk and Stories,’ an hour-long public outreach event hosted by the Simons Foundation
+
+- date: 2025-10
+  kind: talk
+  title: Emergent Activity
+  where: Levitated Matter Conference, Chicago, IL (Invited Talk)
+
+- date: 2025-06
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Frontiers in Applied & Computational Mathematics, Newark, NJ (Invited Talk)
+
+- date: 2025-03-17
+  kind: award
+  title: Statistical and Nonlinear Physics Junior Speaker Award Finalist
+  where: APS March Meeting, Anaheim, CA
+
+- date: 2025-03
+  kind: talk
+  title: Emergent activity arises from wave scattering
+  where: APS March Meeting, Anaheim, CA (Award Session Talk)
+
+- date: 2025-03
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: APS March Meeting, Anaheim, CA (Invited Talk)
+
+- date: 2025-03
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Chemical Engineering and Materials Science, University of Minnesota, Minneapolis, MN (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Chemical Environmental Engineering, Yale University, New Haven, CT (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Mechanical Engineering, Carnegie Mellon University, Pittsburgh, PA (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Applied Mathematics, Harvard John A. Paulson School of Engineering and Applied Sciences, Cambridge, MA (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Chemical and Biological Engineering and Department of Materials Science and Engineering, Northwestern University, Evanston, IL (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Chemical Engineering, University of California, Santa Barbara, Santa Barbara, CA (Invited Seminar)
+
+- date: 2025-02
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Physics, University of California, Berkeley, Berkeley, CA (Invited Seminar)
+
+- date: 2025-01
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Center for the Study of Complex Systems, University of Michigan, Ann Arbor, MI (Invited Seminar)
+
+- date: 2025-01
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Mechanical Engineering, University of Minnesota, Minneapolis, MN (Invited Seminar)
+
+- date: 2025-01
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Mechanical Engineering, Northwestern University, Evanston, IL (Invited Seminar)
+
+- date: 2025-01
+  kind: talk
+  title: Designing dynamic and non-equilibrium materials
+  where: Department of Chemistry, Columbia University, New York, NY (Invited Seminar)
+
+- date: 2024-11
+  kind: press
+  title: How to Pop a Microscopic Cork
+  where: Physics Magazine, on “Tuning colloidal reactions”
+  url: https://physics.aps.org/articles/v17/169
+
+- date: 2024-10
+  kind: talk
+  title: Inverse design of bio-inspired materials
+  where: Statistical Mechanics and Molecular Simulation Seminar (Invited Talk)
+
+- date: 2024-09-25
+  kind: award
+  title: MIT Chemical Engineering Rising Stars Workshop
+
+- date: 2024-07-09
+  kind: talk
+  title: Designing bio-inspired properties in self-assembled materials
+  where: University of Washington Distinguished Young Scholars Seminar (Invited Talk)
+
+- date: 2024-05
+  kind: talk
+  title: Inverse design with differentiable patchy particles
+  where: SIAM Mathematical Aspects of Materials Science (Invited Talk)
+
+- date: 2024-04
+  kind: talk
+  title: Emergent activity in wave-mediated interactions
+  where: Soft Matter Theory Seminar, University of Pennsylvania (Invited Talk)
+
+- date: 2023-11
+  kind: talk
+  title: Inverse design of functional materials
+  where: NYU Courant Modeling and Simulation Group Seminar
+
+- date: 2023-11
+  kind: talk
+  title: Introduction to Automatic Differentiation
+  where: Flatiron Center for Computational Biology - Inference Group
+
+- date: 2023-09
+  kind: award
+  title: Simons Foundation Junior Fellowship
+
+- date: 2023-03
+  kind: talk
+  title: Inferring interaction potentials from particle trajectories
+  where: APS March Meeting, Las Vegas, NV (Award Session Talk)
+
+- date: 2022-11
+  kind: talk
+  title: An Introduction to End-to-End Differentiable Atomistic Simulations with JAX MD
+  where: MRS Meeting, Boston, MA (Tutorial Instructor)

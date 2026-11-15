@@ -1,0 +1,69 @@
+# Everything on the Bio page.
+
+# Each list item is one paragraph.
+bio:
+  - >
+    Ella King is an Assistant Professor of Chemical and Biological Engineering
+    and of Materials Science and Engineering at Northwestern University.
+  - >
+    Before joining Northwestern, Ella King was a Simons Junior Fellow at NYU.
+    She received a Ph.D. in physics from Harvard University and B.S. from
+    Stanford University. Ella has been recognized with an “Emerging Soft
+    Matter Excellence Award,” as a speaker in the “Distinguished Young
+    Scholars Seminar,” among the “Rising Stars in Soft and Biological Matter”,
+    with a Certificate of Distinction in Teaching, and with an NSF Graduate
+    Fellowship, among others.
+
+positions:
+  - when: 2026 – present
+    what: Assistant Professor, Northwestern University
+    detail: Chemical & Biological Engineering and Materials Science & Engineering
+  - when: 2023 – 2026
+    what: Simons Junior Fellow
+    detail: "NYU Center for Soft Matter Research and Flatiron Institute Center for Computational Biology. Advisor: David Grier"
+  - when: 2018 – 2023
+    what: Ph.D. in Physics, Harvard University
+    detail: "Advisor: Michael Brenner"
+  - when: 2014 – 2018
+    what: B.S. in Physics, Stanford University
+    detail: Minor in Mathematics
+
+honors:
+  - when: 2023 – 2026
+    what: Simons Foundation Junior Fellowship
+  - when: 2025
+    what: Statistical and Nonlinear Physics Junior Speaker Award Finalist
+  - when: 2024
+    what: MIT Chemical Engineering Rising Stars Workshop
+  - when: 2024
+    what: University of Washington Distinguished Young Scholars Seminar
+  - when: 2023
+    what: Emerging Soft Matter Excellence Award Finalist
+  - when: 2022
+    what: Rising Stars in Soft and Biological Materials Symposium
+  - when: 2019 – 2023
+    what: NSF Graduate Research Fellow
+  - when: 2020 – 2021
+    what: Two Sigma PhD Fellowship Finalist
+  - when: 2020
+    what: Certificate of Distinction in Teaching
+
+teaching:
+  - when: Spring 2027
+    what: "MSE 301: Chemical Aspects of Engineering Materials"
+    detail: Undergraduate course
+  - when: Winter 2027
+    what: "ChBE 451: Applied Molecular Modeling"
+    detail: Graduate elective course, co-taught with Randall Snurr
+
+service:
+  - what: American Physical Society DSOFT Early Career Representative
+    detail: Elected position. Chairing the Communications and Outreach Committee and helping organize the annual March Meeting Short Course and Tutorials.
+  - what: American Physical Society DSOFT Communications Committee Chair
+    detail: Initiated the 'Research Highlights' series, direct outreach efforts on social media, lead and coordinate a team of seven people.
+  - what: Mentor for BioBus Junior Scientist Internship
+    url: https://www.biobus.org/internship/
+    detail: Advised a high school student in a Manhattan public school on a research project from conception through poster presentation.
+  - what: Outreach Director and board member for WoWSTEM
+    url: https://www.wowstem.org/
+    detail: Communicated with press outlets, organized advertising, and edited blog posts for wowstem.org, a website aimed at making advanced STEM topics accessible to middle and high school girls.

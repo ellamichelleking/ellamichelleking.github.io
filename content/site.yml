@@ -1,0 +1,74 @@
+# ── Global site settings ────────────────────────────────────────────
+# Edit these and the whole site updates. See UPDATING.md for help.
+
+name: Ella King
+role: Assistant Professor
+institution: Northwestern University
+departments:
+  - Chemical & Biological Engineering
+  - Materials Science & Engineering
+url: https://ellaking.org
+
+# One or two sentences shown under your name on the homepage.
+pitch: >
+  The King group works to understand and design materials that are dynamic,
+  responsive, and can correct their own errors.
+
+# Research description on the homepage. Each list item is one paragraph.
+research:
+  - >
+    Unlike human-made materials, biological systems are strikingly robust to
+    errors in the face of dynamic, out-of-equilibrium environments. Living
+    matter corrects errors across six orders of magnitude: nanometer-scale
+    kinetic proofreading achieves exponentially lower error rates in DNA
+    replication than can be reached at equilibrium, and millimeter-scale
+    vasculature rapidly remodels in response to changes in blood flow. Because
+    many biological systems are capable of robust error correction, it should
+    be possible to design synthetic materials with similar functions.
+  - >
+    Error-correcting materials would revolutionize modern technologies,
+    ranging from artificial joints that could be revitalized with
+    error-correcting synthetic enzymes to last a lifetime instead of just a
+    decade, to phone screens that repair themselves while recharging
+    overnight. Creating these materials will require both fundamental
+    discoveries in the physical and biological laws that govern these complex,
+    dynamic interactions and innovations in computational and inverse design
+    methods. So how do we design error-correcting materials without the luxury
+    of billions of years of evolution? Come join us, we aim to learn how.
+
+# The research group. Research detail and recruiting live there, not here.
+group_name: King Group
+group_url: https://kinggroup.northwestern.edu/
+# Contact
+email: ella.king@northwestern.edu
+address: Technological Institute, Room E154, 2145 Sheridan Rd, Evanston, IL 60208
+cv: assets/king-cv.pdf
+headshot: assets/img/ella-king.jpg
+
+# Links shown on the homepage and in the footer.
+links:
+  - name: Google Scholar
+    url: https://scholar.google.com/citations?user=tMOOznMAAAAJ&hl=en
+  - name: GitHub
+    url: https://github.com/ellamichelleking
+  - name: X / Twitter
+    url: https://twitter.com/Ella_M_King
+  - name: Northwestern profile
+    url: https://www.mccormick.northwestern.edu/research-faculty/directory/profiles/king-ella.html
+
+# How many items the homepage shows.
+home_news: 4
+home_papers: 4
+
+# ── Publications auto-sync (Google Scholar via SerpApi) ──────────────
+# A GitHub Action uses this Scholar author id to add new papers to
+# content/publications.yml every week. See UPDATING.md.
+scholar_id: tMOOznMAAAAJ
+# Scholar entries to never add (theses, duplicates, errata). Titles only.
+scholar_exclude: []
+# Names to bold in author lists (covers Scholar's "EM King" style and the
+# hand-written "King, E. M." style).
+author_highlight:
+  - "King, E. M."
+  - "EM King"
+  - "E King"

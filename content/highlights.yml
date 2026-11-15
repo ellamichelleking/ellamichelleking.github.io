@@ -1,0 +1,46 @@
+# Selected work, shown with an image and a short description at the top of
+# the Publications page. Optional: nothing breaks if this list goes stale.
+# Shown newest first, by `date` (publication date, YYYY-MM-DD).
+# Images live in assets/img/work/.
+
+- title: Tuning colloidal reactions
+  date: "2024-11-27"
+  url: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.133.228201
+  image: assets/img/work/catalyst.jpg
+  venue: Physical Review Letters, 2024
+  desc: "Control over complex colloidal reactions with inverse designed components. Controlled disassembly of virus-like shells and, inspired by drug delivery applications, induced release of small particles trapped inside."
+
+- title: Inferring interaction potentials from stochastic particle trajectories
+  date: "2025-04-22"
+  url: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.023075
+  image: assets/img/work/inferring-potentials.jpg
+  venue: Physical Review Research, 2025
+  desc: "Novel method for extracting interactions from particle trajectories in and out of equilibrium. Validated on experimental colloidal data interacting via depletion forces."
+
+- title: Scattered waves fuel emergent activity
+  date: "2025-01-15"
+  url: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.7.013055
+  image: assets/img/work/cartoon-emergent.jpg
+  venue: Physical Review Research, 2025
+  desc: "Nonreciprocal wave-mediated interactions reveal a new form of activity that emerges as a collective property of the system."
+
+- title: Programmable patchy particles for materials design
+  date: "2024-06-24"
+  url: https://www.pnas.org/doi/full/10.1073/pnas.2311891121
+  image: assets/img/work/kagome-lattice.jpg
+  venue: PNAS, 2024
+  desc: "Computational design of anisotropic particle shapes that stabilize complex open lattices and enable self-limited assembly using automatic differentiation."
+
+- title: Proofreading mechanism for colloidal self-assembly
+  date: "2024-12-09"
+  url: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.6.L042057
+  image: assets/img/work/proofreading.jpg
+  venue: Physical Review Research, 2024
+  desc: "State-change based proofreading mechanism in colloidal particles undergoing self-assembly."
+
+- title: Uncovering the mechanism for aggregation in repeat expanded RNA reveals a reentrant transition
+  date: "2023-01-20"
+  url: https://www.nature.com/articles/s41467-022-35803-3
+  image: assets/img/work/rnas.jpg
+  venue: Nature Communications, 2023
+  desc: "Repeat expanded RNA, which is implicated in neurodegenerative diseases such as ALS, aggregates in vitro. Origin of this aggregation is presented, and a reentrant phase transition is observed as a result."
