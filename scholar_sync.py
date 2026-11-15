@@ -5,15 +5,27 @@ Runs weekly in GitHub Actions (.github/workflows/update.yml). It needs:
   - a free SerpApi key in the SERPAPI_KEY environment variable, and
   - the Scholar author id in content/site.yml (scholar_id:).
 
-It only ever ADDS papers that are not already in the list, at the top of the
-file. Existing entries (with their co-first-author marks, badges and journal
-links) are never changed. If the key is missing or the request fails, the file
-is left exactly as it is, so the website never breaks.
+It only ever ADDS papers and preprints that are not already in the list, at
+the top of the file. Existing entries (with their co-first-author marks,
+badges and journal links) are never changed. Conference abstracts (APS, AIChE)
+are skipped; see scholar_exclude_venues in content/site.yml. If the key is
+missing or the request fails, the file is left exactly as it is, so the
+website never breaks.
 """
 import difflib, json, os, re, sys, urllib.parse, urllib.request, yaml
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 PUBS = os.path.join(HERE, "content", "publications.yml")
+
+# Scholar entries whose venue contains any of these are meeting abstracts,
+# not papers. Used when site.yml does not set scholar_exclude_venues.
+DEFAULT_EXCLUDE_VENUES = [
+    "AIChE Annual Meeting",
+    "APS Global Physics Summit",
+    "APS March Meeting",
+    "Meeting Abstracts",
+    "Bulletin of the American Physical Society",
+]
 
 def norm(title):
     return re.sub(r"[^a-z0-9]", "", str(title).lower())
@@ -28,13 +40,19 @@ def year_of(a):
     except ValueError:
         return 0
 
-def new_entries(articles, existing_titles, exclude=()):
-    """Scholar articles that are not in the list yet, newest first."""
+def is_abstract(article, exclude_venues):
+    venue = (article.get("publication") or "").lower()
+    return any(v.lower() in venue for v in exclude_venues)
+
+def new_entries(articles, existing_titles, exclude=(), exclude_venues=DEFAULT_EXCLUDE_VENUES):
+    """Scholar papers and preprints that are not in the list yet, newest first."""
     known = list(existing_titles) + list(exclude)
     out = []
     for a in sorted(articles, key=year_of, reverse=True):
         title = (a.get("title") or "").strip()
-        if not title or any(same(title, k) for k in known):
+        if not title or is_abstract(a, exclude_venues):
+            continue
+        if any(same(title, k) for k in known):
             continue
         known.append(title)
         entry = {"authors": (a.get("authors") or "").strip(), "title": title}
@@ -51,6 +69,8 @@ def new_entries(articles, existing_titles, exclude=()):
 
 def insert(text, entries):
     """Put the new entries above the first existing one, keeping the rest as is."""
+    if not entries:
+        return text
     block = yaml.safe_dump(entries, sort_keys=False, allow_unicode=True,
                            default_flow_style=False, width=10000)
     block = re.sub(r"(?m)^- ", "\n- ", block).lstrip("\n") + "\n"
@@ -89,9 +109,12 @@ def main():
         return
     text = open(PUBS, encoding="utf-8").read()
     existing = [p["title"] for p in (yaml.safe_load(text) or [])]
-    entries = new_entries(articles, existing, site.get("scholar_exclude") or [])
+    venues = site.get("scholar_exclude_venues") or DEFAULT_EXCLUDE_VENUES
+    skipped = sum(is_abstract(a, venues) for a in articles)
+    entries = new_entries(articles, existing, site.get("scholar_exclude") or [], venues)
+    print(f"Checked {len(articles)} Scholar entries ({skipped} meeting abstracts skipped).")
     if not entries:
-        print(f"Checked {len(articles)} Scholar entries - nothing new.")
+        print("Nothing new.")
         return
     with open(PUBS, "w", encoding="utf-8") as fh:
         fh.write(insert(text, entries))

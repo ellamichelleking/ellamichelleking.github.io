@@ -45,6 +45,8 @@ Things to know:
   ```
   (`*` marks co-first authors, `†` corresponding; your name is bolded
   automatically.)
+- Meeting abstracts (APS, AIChE) are skipped automatically, by venue; the list
+  is `scholar_exclude_venues:` in `content/site.yml`.
 - To keep something on Scholar off the site (a thesis, a duplicate), add its
   title to `scholar_exclude:` in `content/site.yml`. Deleting it from
   `publications.yml` alone isn't enough; it would be added back.

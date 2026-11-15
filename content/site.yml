@@ -64,8 +64,19 @@ home_papers: 4
 # A GitHub Action uses this Scholar author id to add new papers to
 # content/publications.yml every week. See UPDATING.md.
 scholar_id: tMOOznMAAAAJ
-# Scholar entries to never add (theses, duplicates, errata). Titles only.
-scholar_exclude: []
+# Scholar entries whose venue contains any of these are skipped. These are
+# the meeting abstracts that APS and AIChE push to Scholar; only papers and
+# preprints are added.
+scholar_exclude_venues:
+  - AIChE Annual Meeting
+  - APS Global Physics Summit
+  - APS March Meeting
+  - Meeting Abstracts
+  - Bulletin of the American Physical Society
+# Other Scholar entries to never add (theses, duplicates, errata). Titles only.
+scholar_exclude:
+  - "Frankenstein's Tiniest Monsters: Inverse Design of Bio-Inspired Function in Self-Assembling Materials"
+  - Scientific uses of automatic differentiation
 # Names to bold in author lists (covers Scholar's "EM King" style and the
 # hand-written "King, E. M." style).
 author_highlight:
