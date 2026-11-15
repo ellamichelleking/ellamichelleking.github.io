@@ -10,9 +10,11 @@ departments:
 url: https://ellaking.org
 
 # One or two sentences shown under your name on the homepage.
+# Links are written as [text](url).
 pitch: >
-  The King group works to understand and design materials that are dynamic,
-  responsive, and can correct their own errors.
+  My [research group](https://kinggroup.northwestern.edu/) works to understand
+  and design materials that are dynamic, responsive, and can correct their own
+  errors.
 
 # Research description on the homepage. Each list item is one paragraph.
 research:

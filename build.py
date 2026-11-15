@@ -25,6 +25,20 @@ def esc(s):    return html.escape(str(s), quote=False)
 def escurl(u): return html.escape(str(u), quote=True)
 def ext(u):    return ' rel="noopener"' if str(u).startswith("http") else ""
 
+LINK = re.compile(r"\[([^\]]+)\]\(([^)\s]+)\)")
+def inline(text):
+    """Escape text, turning [text](url) into links."""
+    text = " ".join(str(text).split())
+    out, pos = "", 0
+    for m in LINK.finditer(text):
+        out += esc(text[pos:m.start()])
+        out += f'<a href="{escurl(m.group(2))}"{ext(m.group(2))}>{esc(m.group(1))}</a>'
+        pos = m.end()
+    return out + esc(text[pos:])
+def plain(text):
+    """Text with [text](url) links reduced to their text."""
+    return LINK.sub(r"\1", " ".join(str(text).split()))
+
 FONTS = ('<link rel="preconnect" href="https://fonts.googleapis.com">'
          '<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>'
          '<link href="https://fonts.googleapis.com/css2?'
@@ -201,7 +215,7 @@ def build_home():
   <div class="hero-copy">
     <p class="eyebrow">{esc(SITE['role'])} &middot; {esc(SITE['institution'])}</p>
     <h1>{esc(SITE['name'])}</h1>
-    <p class="lead">{esc(SITE['pitch'])}</p>
+    <p class="lead">{inline(SITE['pitch'])}</p>
     <p class="depts">{depts}</p>
     <div class="btn-row">
       <a class="btn" href="bio.html">Bio</a>
@@ -245,7 +259,7 @@ def build_home():
 </div></section>
 """
     page("index.html", f"{SITE['name']} · {SITE['institution']}",
-         " ".join(SITE["pitch"].split()), "Home", body, extra)
+         plain(SITE["pitch"]), "Home", body, extra)
 
 # ---------------------------------------------------------------- BIO
 def build_bio():
